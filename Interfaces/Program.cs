@@ -21,7 +21,7 @@ namespace Interfaces
             c.Reverse();
             c.SteerRight();
             c.Steer(true);
-
+            c.Steer(false);
 
 
             Console.WriteLine("car car");
@@ -53,6 +53,19 @@ namespace Interfaces
             moto2.SteerLeft();
             moto2.Stop();
             Console.WriteLine(moto2.IsOn);
+
+            Boat boat = new Boat();
+            boat.Start();
+            boat.SteerLeft();
+            boat.Steer(false);
+
+            Console.WriteLine("Boolean streering");
+            car.boolSteerLeft();
+            car.boolSteerRight();
+
+
+
+
 
             Console.ReadLine();
 

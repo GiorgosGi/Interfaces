@@ -39,5 +39,24 @@ namespace Interfaces.Models
 		{
 			this._isOn = false;
 		}
+
+        private bool _boolSteer;
+
+        public bool BoolSteer
+        {
+            get { return _boolSteer; }
+            set { _boolSteer = value; }
+        }
+
+		public void boolSteerLeft ()
+		{
+			this._boolSteer = true;
+		}
+
+		public void boolSteerRight()
+		{
+			this._boolSteer = false;
+		}
+
 	}
 }
