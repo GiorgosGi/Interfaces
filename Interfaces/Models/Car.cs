@@ -41,7 +41,10 @@ namespace Interfaces.Models
 
 		public void Steer(bool steerLeft)
 		{
-			throw new NotImplementedException();
+            if (steerLeft)
+            {
+				Console.WriteLine("The car is steering left");
+			}
 		}
 	}
 }

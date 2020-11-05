@@ -18,6 +18,12 @@ namespace Interfaces
             Car c = new Car(true);
             c.SteerLeft();
 
+            c.Reverse();
+            c.SteerRight();
+            c.Steer(true);
+
+
+
             Console.WriteLine("car car");
             Car car = new Car();
             Console.WriteLine(car.IsOn);
@@ -36,6 +42,10 @@ namespace Interfaces
             moto.Start();
             moto.SteerLeft();
             Console.WriteLine(moto.IsOn);
+
+            moto.SteerRight();
+            moto.Steer(false);
+
 
             Console.WriteLine("motorbike moto2");
             MotorBike moto2 = new MotorBike(true);
